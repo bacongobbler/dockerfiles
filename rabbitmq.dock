@@ -1,0 +1,20 @@
+from		ubuntu
+maintainer	Matthew Fisher <me@bacongobbler.com>
+
+# install prerequisites
+run			apt-get update
+run			apt-get install wget
+
+# compile erlang (from source)
+run         mkdir -p /opt/erlang
+run         curl http://www.erlang.org/download/otp_src_R16B.tar.gz | tar xzf -
+run         mv otp_src_R16B r16b
+run         ./r16b/configure --prefix=/opt/erlang/r16b --enable-hipe --with-ssl
+run         cd r16b && make && make install
+
+# add rabbitmq to sources
+run			wget http://www.rabbitmq.com/releases/rabbitmq-server/v3.1.3/rabbitmq-server_3.1.3-1_all.deb
+run			dpkg -i rabbitmq-server_3.1.3-1_all.deb
+
+# cleanup install
+run			rm rabbitmq-server_3.1.3-1_all.deb
