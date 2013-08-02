@@ -3,7 +3,7 @@ maintainer	Matthew Fisher <me@bacongobbler.com>
 
 # install prerequisites
 run			apt-get update
-run			apt-get install -y wget erlang-nox logrotate
+run			apt-get install -q -y wget erlang-nox logrotate
 
 # hack to connect to upstart: https://github.com/dotcloud/docker/issues/1024
 run         dpkg-divert --local --rename --add /sbin/initctl

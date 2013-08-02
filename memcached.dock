@@ -2,7 +2,7 @@ from        ubuntu
 maintainer  Matthew Fisher <me@bacongobbler.com>
 
 run         apt-get update
-run         apt-get install -y memcached
+run         apt-get install -q -y memcached
 
 expose      11211
 

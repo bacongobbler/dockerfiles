@@ -9,7 +9,7 @@ run         apt-get update
 # hack to connect to upstart: https://github.com/dotcloud/docker/issues/1024
 run         dpkg-divert --local --rename --add /sbin/initctl
 run         ln -s /bin/true /sbin/initctl
-run         apt-get install -y mongodb-10gen
+run         apt-get install -q -y mongodb-10gen
 
 # create the default data directory for mongodb
 run         mkdir -p /data/db
