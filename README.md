@@ -25,5 +25,25 @@ cd $_
 Now, let's try to build memcached:
 
 ```
-docker build -t memcached - < memcached.dock
+docker build -t bacongobbler/memcached - < memcached.dock
+```
+
+If it was built successfully, we should see the following:
+
+```
+$ docker images
+REPOSITORY               TAG                 ID                  CREATED             SIZE
+memcached                latest              6e2b6dc19333        27 seconds ago      12.29 kB (virtual 210.5 MB)
+bacongobbler/memcached   latest              0daad6ce48cb        5 weeks ago         12.29 kB (virtual 210.5 MB)
+ubuntu                   12.04               8dbd9e392a96        4 months ago        131.5 MB (virtual 131.5 MB)
+ubuntu                   latest              8dbd9e392a96        4 months ago        131.5 MB (virtual 131.5 MB)
+ubuntu                   precise             8dbd9e392a96        4 months ago        131.5 MB (virtual 131.5 MB)
+ubuntu                   12.10               b750fe79269d        5 months ago        24.65 kB (virtual 180.1 MB)
+ubuntu                   quantal             b750fe79269d        5 months ago        24.65 kB (virtual 180.1 MB)
+```
+
+And now, we can run it:
+
+```
+docker run -d bacongobbler/memcached
 ```
