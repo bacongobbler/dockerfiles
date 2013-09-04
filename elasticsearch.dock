@@ -13,4 +13,6 @@ run         mv elasticsearch-0.90.1 /opt/elasticsearch
 # clean up installation
 run         rm elasticsearch-0.90.1.tar.gz
 
+expose      9200
+
 cmd         ["/opt/elasticsearch/bin/elasticsearch", "-f"]
