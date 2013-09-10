@@ -33,8 +33,7 @@ If it was built successfully, we should see the following:
 ```
 $ docker images
 REPOSITORY               TAG                 ID                  CREATED             SIZE
-memcached                latest              6e2b6dc19333        27 seconds ago      12.29 kB (virtual 210.5 MB)
-bacongobbler/memcached   latest              0daad6ce48cb        5 weeks ago         12.29 kB (virtual 210.5 MB)
+bacongobbler/memcached   latest              6e2b6dc19333        27 seconds ago      12.29 kB (virtual 210.5 MB)
 ubuntu                   12.04               8dbd9e392a96        4 months ago        131.5 MB (virtual 131.5 MB)
 ubuntu                   latest              8dbd9e392a96        4 months ago        131.5 MB (virtual 131.5 MB)
 ubuntu                   precise             8dbd9e392a96        4 months ago        131.5 MB (virtual 131.5 MB)
