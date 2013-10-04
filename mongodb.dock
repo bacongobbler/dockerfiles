@@ -20,4 +20,4 @@ expose      27017
 # mongodb admin console
 expose      28017
 
-CMD         ["mongod"]
+cmd         ["mongod"]
