@@ -46,3 +46,9 @@ And now, we can run it:
 ```
 docker run -d bacongobbler/memcached
 ```
+
+You can also just build all of the docker images in this repository all at once!
+
+```
+bash build_all.sh
+```
