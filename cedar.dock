@@ -1,5 +1,6 @@
 FROM        ubuntu
 MAINTAINER  Matthew Fisher <me@bacongobbler.com>
 
-ADD https://raw.github.com/heroku/stack-images/master/bin/cedar.sh .
-RUN cedar.sh
+ADD https://raw.github.com/heroku/stack-images/master/bin/cedar.sh /
+RUN /cedar.sh
+RUN rm /cedar.sh
