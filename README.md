@@ -3,14 +3,6 @@ dockerfiles
 
 A list of docker build files for common web services. See http://docker.io/ for more info on dockerfiles.
 
-# Note about Active* dockerfiles
-
-Please read and agree to the terms of agreement before using these dockerfiles:
-
-http://www.activestate.com/activepython/license-agreement
-
-http://www.activestate.com/activetcl/license-agreement
-
 # Building
 
 These steps have been tested on Ubuntu 13.04 (raring):
