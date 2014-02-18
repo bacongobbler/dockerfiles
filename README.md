@@ -25,7 +25,7 @@ cd $_
 Now, let's try to build memcached:
 
 ```
-docker build -t bacongobbler/memcached - < memcached.dock
+cd memcached && docker build -t bacongobbler/memcached .
 ```
 
 If it was built successfully, we should see the following:
