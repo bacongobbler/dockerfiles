@@ -13,4 +13,4 @@ WORKDIR /etc/nginx
 
 EXPOSE  80
 
-ENTRYPOINT  ["nginx"]
+CMD nginx
