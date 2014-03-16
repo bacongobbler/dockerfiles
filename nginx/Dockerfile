@@ -1,5 +1,5 @@
 FROM        ubuntu
-MAINTAINER  Matthew Fisher <matthewf@opdemand.com>
+MAINTAINER  Matthew Fisher <me@bacongobbler.com>
 
 # install nginx
 RUN apt-get update

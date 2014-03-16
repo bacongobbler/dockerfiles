@@ -1,5 +1,5 @@
 FROM        ubuntu
-MAINTAINER  Matthew Fisher <matthewf@opdemand.com>
+MAINTAINER  Matthew Fisher <me@bacongobbler.com>
 
 RUN apt-get update
 RUN apt-get install -yq pound
