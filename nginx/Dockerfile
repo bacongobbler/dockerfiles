@@ -7,7 +7,9 @@ RUN apt-get install -y software-properties-common python-software-properties
 RUN add-apt-repository -y ppa:nginx/stable
 RUN apt-get update
 RUN apt-get install -y nginx
-RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
+
+ADD nginx.conf  /etc/nginx/nginx.conf
+ADD default     /etc/nginx/sites-enabled/default
 
 WORKDIR /etc/nginx
 
